@@ -3,11 +3,12 @@
 This guide sets up a Windows 11 laptop for the whole course. Everything runs on Windows.
 Follow it section by section; after each step, run its check before you go on.
 
-- **Day 1** (Launchpad): VS Code and uv, in **PowerShell**. That is all you need for `hello/ask.py`.
-- **Day 2** (Launchpad): Git Bash in VS Code, Python 3.12, the course kit, WSL 2, Docker Desktop, and Ollama if you have the disk space.
+- **Day 1** (Launchpad task 3): VS Code and uv, in **PowerShell**. That is all you need for `hello/ask.py`.
+- **Day 2, part 1** (Launchpad task 8): Git Bash in VS Code, line endings, Python 3.12, UTF-8 and the course kit. Steps 2 to 6, all in Git Bash.
+- **Day 2, part 2** (Launchpad task 9): WSL 2, Docker Desktop, and Ollama if you have the disk space. Steps 7, 8 and 10.
 - **Later**: Node.js, before TaskPilot (week 6); Ollama in week 3 if you skipped it.
 
-From day 2, **Git Bash is your terminal**, inside VS Code. Run every course command in Git Bash, unless a step says PowerShell.
+From Launchpad task 8 on, **Git Bash is your terminal**, inside VS Code. Run every course command in Git Bash, unless a step says PowerShell.
 The versions the course uses are in [`../VERSIONS.md`](../VERSIONS.md). The model names are in [`../models.md`](../models.md).
 
 ## Before you start
@@ -19,6 +20,8 @@ The versions the course uses are in [`../VERSIONS.md`](../VERSIONS.md). The mode
 - Keep the charger plugged in. If your laptop does not run Windows, ask your mentor for the matching steps.
 
 ## Day 1: VS Code and uv (PowerShell)
+
+This is Launchpad task 3. You have no Git Bash yet, so every command here runs in PowerShell.
 
 ### VS Code
 
@@ -45,18 +48,22 @@ It prints `uv` and a version number. You do not install Python yourself: the fir
 
 ## Day 2: the rest of the laptop
 
+Launchpad task 7 does Step 1. Task 8 (part 1) does Steps 2 to 6, all in Git Bash. Task 9 (part 2) does Steps 7, 8 and 10: only the `wsl` commands and the Ollama installer there run in PowerShell. Step 9 is a rule to read now; you need it from week 6.
+
 ### Step 1: Git for Windows
 
-Install Git from https://git-scm.com/downloads/win with the default options. They include Git Bash and Git Credential Manager (for signing in to GitHub).
+You installed Git in Launchpad task 7, from https://git-scm.com/downloads/win with the default options. Those options include Git Bash and Git Credential Manager (for signing in to GitHub).
 
 Check it in Git Bash: `git --version` prints `git version 2.` and more numbers. Any version from 2.45 is fine.
 
 ### Step 2: Git Bash in VS Code
 
+Part 1 (Launchpad task 8) starts here.
+
 1. In VS Code, press Ctrl+Shift+P and type `Terminal: Select Default Profile`.
 2. Choose **Git Bash**.
 
-Check it: open a new terminal with Ctrl+`. The prompt shows `MINGW64`, and `uname -s` prints a line that starts with `MINGW64`.
+Check it: open a new terminal (**Terminal**, then **New Terminal** in the top menu). The prompt shows `MINGW64`, and `uname -s` prints a line that starts with `MINGW64`.
 
 ### Step 3: Line endings
 
@@ -66,7 +73,13 @@ Containers need LF: a file saved with CRLF can fail inside a container with erro
 1. In VS Code, open **Settings** (Ctrl+,) and search for `eol`.
 2. Set **Files: Eol** to `\n`.
 
-Check it: open a new file. The status bar at the bottom right shows `LF`, not `CRLF`.
+Check it: open a new file. The status bar at the bottom right shows `LF`, not `CRLF`. In Git Bash, this prints the setting:
+
+```bash
+grep eol "$APPDATA/Code/User/settings.json"
+```
+
+If it prints nothing, set **Files: Eol** under the **User** tab of Settings, not Workspace.
 
 ### Step 4: Python 3.12 through uv
 
@@ -91,9 +104,9 @@ Three ways you will use uv:
 ### Step 5: Python and UTF-8
 
 In Git Bash, Python cannot print some characters (such as `₹` or `é`) through a pipe or into a file unless UTF-8 mode is on. Model answers often contain such characters.
-Turn it on once, in **PowerShell**:
+Turn it on once, in Git Bash (the same command works in PowerShell):
 
-```powershell
+```bash
 setx PYTHONUTF8 1
 ```
 
@@ -120,6 +133,8 @@ Check it: `ls ~/genai-ess-kit` lists `README.md`, `VERSIONS.md`, `models.md`, `s
 
 ### Step 7: WSL 2
 
+Part 2 (Launchpad task 9) starts here.
+
 WSL 2 runs a small Linux system inside Windows. Docker Desktop runs on it; you will not use Linux directly.
 Open **PowerShell as administrator** (right-click PowerShell and choose **Run as administrator**) and run:
 
@@ -133,9 +148,10 @@ Check it in PowerShell:
 
 ```powershell
 wsl --version
+wsl -l -v
 ```
 
-It shows `WSL version: 2.` and more numbers. If `wsl --version` is not recognised or the version is old, run `wsl --update`.
+`wsl --version` shows `WSL version: 2.` and more numbers. If it is not recognised or the version is old, run `wsl --update`. `wsl -l -v` lists at least one line with `2` under `VERSION`; task 9 asks you to paste it.
 
 ### Step 8: Docker Desktop
 
