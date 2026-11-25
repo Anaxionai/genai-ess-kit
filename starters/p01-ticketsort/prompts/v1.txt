@@ -1,0 +1,4 @@
+TODO(task 10): delete these lines and write your own system instruction here.
+Say who the shop is, what the job is, and that each ticket gets one category, one urgency
+and a one-line summary. The prompt is your own work: never paste a ticket, or the true
+labels, from data/tickets.csv into it. label.py sends this whole file to the model.

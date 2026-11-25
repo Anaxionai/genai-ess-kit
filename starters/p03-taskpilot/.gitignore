@@ -1,0 +1,14 @@
+# Secrets and local tools
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Your DocAnswer copy (its own .gitignore usually covers these too)
+docanswer/.venv/
+docanswer/data/
+docanswer/chroma/
+
+# TODO(task 7): add the traces folder here (the traces you paste into evidence.md are your proof).
+# TODO(task 17): add the cache folder here.
+# Never ignore results/: those CSV files are committed.

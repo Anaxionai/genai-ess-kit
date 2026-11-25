@@ -1,0 +1,311 @@
+{
+  "owner": "sam.rivera@fernhill.example",
+  "company_domain": "fernhill.example",
+  "timezone": "Asia/Kolkata (UTC+05:30)",
+  "week": {
+    "from": "2027-01-11",
+    "to": "2027-01-15"
+  },
+  "meetings": [
+    {
+      "id": "m01",
+      "date": "2027-01-11",
+      "start": "09:30",
+      "end": "09:45",
+      "title": "Team stand-up",
+      "location": "Video call",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "Daily stand-up. Each person: yesterday, today, blockers."
+    },
+    {
+      "id": "m02",
+      "date": "2027-01-11",
+      "start": "11:00",
+      "end": "12:00",
+      "title": "Q1 planning: invoicing features",
+      "location": "Riverside, room Oak",
+      "organiser": "maria.santos@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "maria.santos@fernhill.example",
+        "alex.chen@fernhill.example",
+        "omar.haddad@fernhill.example"
+      ],
+      "notes": "Bring your top three ideas for the invoicing roadmap."
+    },
+    {
+      "id": "m03",
+      "date": "2027-01-11",
+      "start": "14:00",
+      "end": "14:30",
+      "title": "One-to-one with Maria",
+      "location": "Riverside, room Elm",
+      "organiser": "maria.santos@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "maria.santos@fernhill.example"
+      ],
+      "notes": "Monthly one-to-one."
+    },
+    {
+      "id": "m04",
+      "date": "2027-01-11",
+      "start": "16:00",
+      "end": "17:00",
+      "title": "Security training: phishing refresher",
+      "location": "Video call",
+      "organiser": "lena.fischer@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "lena.fischer@fernhill.example",
+        "jordan.lee@fernhill.example",
+        "aisha.khan@fernhill.example"
+      ],
+      "notes": "Required for everyone who missed the November session."
+    },
+    {
+      "id": "m05",
+      "date": "2027-01-12",
+      "start": "09:30",
+      "end": "09:45",
+      "title": "Team stand-up",
+      "location": "Video call",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "Daily stand-up."
+    },
+    {
+      "id": "m06",
+      "date": "2027-01-12",
+      "start": "10:00",
+      "end": "11:30",
+      "title": "Customer interview review",
+      "location": "Riverside, room Oak",
+      "organiser": "priya.nair@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "priya.nair@fernhill.example",
+        "tom.okafor@fernhill.example"
+      ],
+      "notes": "We go through the notes from last week's five customer interviews."
+    },
+    {
+      "id": "m07",
+      "date": "2027-01-12",
+      "start": "11:00",
+      "end": "11:30",
+      "title": "Budget check with Finance",
+      "location": "Video call",
+      "organiser": "ravi.menon@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "ravi.menon@fernhill.example"
+      ],
+      "notes": "Check the team's travel and learning spend so far. Overlaps the interview review: Sam to join at 11:15 if it runs late."
+    },
+    {
+      "id": "m08",
+      "date": "2027-01-12",
+      "start": "15:00",
+      "end": "16:00",
+      "title": "Design review: new invoice screen",
+      "location": "Hilltop, room Cedar",
+      "organiser": "omar.haddad@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "omar.haddad@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example"
+      ],
+      "notes": "Omar shows the new invoice screen. Feedback in the design channel afterwards."
+    },
+    {
+      "id": "m09",
+      "date": "2027-01-13",
+      "start": "00:00",
+      "end": "23:59",
+      "title": "Team anchor day (all in the office)",
+      "location": "Riverside",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "Book a desk in DeskBook. Team lunch at 13:00."
+    },
+    {
+      "id": "m10",
+      "date": "2027-01-13",
+      "start": "09:30",
+      "end": "09:45",
+      "title": "Team stand-up",
+      "location": "Riverside, team area",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "Daily stand-up, in person."
+    },
+    {
+      "id": "m11",
+      "date": "2027-01-13",
+      "start": "10:00",
+      "end": "12:00",
+      "title": "Release planning for version 4.2",
+      "location": "Riverside, room Oak",
+      "organiser": "alex.chen@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "jordan.lee@fernhill.example",
+        "aisha.khan@fernhill.example",
+        "tom.okafor@fernhill.example"
+      ],
+      "notes": "Agree the scope and the release date for version 4.2."
+    },
+    {
+      "id": "m12",
+      "date": "2027-01-13",
+      "start": "13:00",
+      "end": "14:00",
+      "title": "Team lunch",
+      "location": "Riverside, cafe area",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "First team meal of the year. Budget: one of the two team meals."
+    },
+    {
+      "id": "m13",
+      "date": "2027-01-13",
+      "start": "16:00",
+      "end": "16:30",
+      "title": "Interview: backend engineer (final round)",
+      "location": "Riverside, room Elm",
+      "organiser": "aisha.khan@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "aisha.khan@fernhill.example",
+        "omar.haddad@fernhill.example"
+      ],
+      "notes": "Panel of three with Omar from the design team. Feedback in PeopleHub before talking to each other."
+    },
+    {
+      "id": "m14",
+      "date": "2027-01-14",
+      "start": "09:30",
+      "end": "09:45",
+      "title": "Team stand-up",
+      "location": "Video call",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "Daily stand-up."
+    },
+    {
+      "id": "m15",
+      "date": "2027-01-14",
+      "start": "10:00",
+      "end": "10:30",
+      "title": "Expenses walkthrough for new joiners",
+      "location": "Video call",
+      "organiser": "ravi.menon@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "ravi.menon@fernhill.example",
+        "tom.okafor@fernhill.example"
+      ],
+      "notes": "Ravi explains ExpenseHub and the receipt rules to Tom."
+    },
+    {
+      "id": "m16",
+      "date": "2027-01-14",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "Workshop: on-call handover",
+      "location": "Hilltop, room Cedar",
+      "organiser": "jordan.lee@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "jordan.lee@fernhill.example",
+        "lena.fischer@fernhill.example",
+        "alex.chen@fernhill.example"
+      ],
+      "notes": "Jordan hands over the on-call rota for February."
+    },
+    {
+      "id": "m17",
+      "date": "2027-01-15",
+      "start": "09:30",
+      "end": "09:45",
+      "title": "Team stand-up",
+      "location": "Video call",
+      "organiser": "sam.rivera@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example"
+      ],
+      "notes": "Daily stand-up."
+    },
+    {
+      "id": "m18",
+      "date": "2027-01-15",
+      "start": "11:00",
+      "end": "11:45",
+      "title": "Demo: version 4.2 progress",
+      "location": "Video call",
+      "organiser": "alex.chen@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "alex.chen@fernhill.example",
+        "maria.santos@fernhill.example",
+        "priya.nair@fernhill.example",
+        "jordan.lee@fernhill.example",
+        "omar.haddad@fernhill.example"
+      ],
+      "notes": "Short demo for Maria. No slides."
+    },
+    {
+      "id": "m19",
+      "date": "2027-01-15",
+      "start": "12:00",
+      "end": "13:00",
+      "title": "Lunch and learn: writing good prompts",
+      "location": "Riverside, room Oak",
+      "organiser": "priya.nair@fernhill.example",
+      "attendees": [
+        "sam.rivera@fernhill.example",
+        "priya.nair@fernhill.example",
+        "tom.okafor@fernhill.example",
+        "aisha.khan@fernhill.example"
+      ],
+      "notes": "Optional. Priya shares what the team learned from its prompt experiments."
+    }
+  ]
+}

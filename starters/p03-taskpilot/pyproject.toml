@@ -1,0 +1,20 @@
+[project]
+name = "taskpilot"
+version = "0.1.0"
+description = "TaskPilot: an office assistant agent with four tools, guards and a trace (GENAI-ESS P3)"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.5.9",
+    "google-genai>=3.6.1",
+    "mcp[cli]==2.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+# Only TaskPilot's own tests. Your DocAnswer copy in docanswer/ keeps its own tests.
+testpaths = ["tests"]
+pythonpath = ["."]

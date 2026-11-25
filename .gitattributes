@@ -1,0 +1,16 @@
+# Check out every text file with LF line endings, on Windows too.
+# Python scripts, Compose files and data files then work the same in Git Bash and inside Linux containers.
+* text=auto eol=lf
+
+# Files that are not text: Git must never change their bytes.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.sqlite3 binary
+*.db binary

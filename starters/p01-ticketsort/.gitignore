@@ -1,0 +1,7 @@
+# Secrets: your key lives in .env and is never committed. Commit .env.example instead.
+.env
+
+# Made by uv and Python. uv.lock is committed; these are not.
+.venv/
+__pycache__/
+.pytest_cache/
