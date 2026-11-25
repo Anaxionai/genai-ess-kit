@@ -12,7 +12,7 @@ You do not write code today. You run it, read it, and change the prompt.
   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
   ```
 
-  Check it: `uv --version` prints a version number. (Day 2's laptop task sets up the rest.)
+  Check it: `uv --version` prints a version number. (Day 2's two laptop tasks set up the rest.)
 
 You do not need to install Python or any library. The first lines of `ask.py` list what it needs, and `uv run` downloads Python 3.12 and the `google-genai` library the first time. That takes a minute; later runs start at once.
 
