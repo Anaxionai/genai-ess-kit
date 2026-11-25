@@ -1,0 +1,21 @@
+[project]
+name = "docanswer"
+version = "0.1.0"
+description = "DocAnswer: answers staff questions from the Fernhill handbook, with citations."
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb==1.5.9",
+    "fastapi[standard]==0.165.0",
+    "google-genai==3.6.1",
+    "pydantic==2.14.4",
+]
+
+[tool.pytest.ini_options]
+# Lets `uv run pytest` import load.py, chunk.py and the rest from this folder.
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest==9.2.0",
+]

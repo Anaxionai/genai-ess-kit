@@ -1,0 +1,18 @@
+# Mailpit: a pretend mail server for TaskPilot. Emails sent to it never leave your laptop.
+#   Start:  docker compose up -d      (in this folder)
+#   Web UI: http://localhost:8025     SMTP: localhost:1025
+#   Stop:   docker compose down       (messages are kept only in memory, so they are deleted)
+name: genai-mailpit
+
+services:
+  mailpit:
+    image: axllent/mailpit:v1.34.0
+    container_name: mailpit
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:1025:1025"   # SMTP: your code sends email here
+      - "127.0.0.1:8025:8025"   # web page and API: you read the emails here
+    environment:
+      MP_MAX_MESSAGES: 500               # keep at most the newest 500 messages
+      MP_SMTP_AUTH_ACCEPT_ANY: 1         # accept any user name and password, if your code sends one
+      MP_SMTP_AUTH_ALLOW_INSECURE: 1     # allow that without TLS (it never leaves your laptop)
